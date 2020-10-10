@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/[name].[hash].js",
-    publicPath: "/webpack-page",
+    publicPath: "/webpack-page/",
     chunkFilename: "js/[id].[chunkhash].js",
   },
   optimization: {
