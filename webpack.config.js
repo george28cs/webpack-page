@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/[name].[hash].js",
-    publicPath: "http://localhost:3001/",
+    publicPath: "/webpack-page",
     chunkFilename: "js/[id].[chunkhash].js",
   },
   optimization: {
@@ -63,7 +63,7 @@ module.exports = {
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, "dist/js/*.dll.js"),
       outputPath: "js",
-      publicPath: "http://localhost:3001/js",
+      publicPath: "webpack-page/js",
     }),
     // Limpia los archivos generados con hash no utilizados
     new CleanWebpackPlugin({
